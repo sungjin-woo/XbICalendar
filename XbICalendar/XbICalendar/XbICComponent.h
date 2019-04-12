@@ -2,6 +2,8 @@
 //  XbICComponent.h
 //
 
+#import <Foundation/Foundation.h>
+
 #import "ical.h"
 @class XbICProperty;
 
