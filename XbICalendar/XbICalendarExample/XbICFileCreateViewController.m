@@ -143,7 +143,7 @@
 -(NSString *) icaltimetypeStringFromDate:(id) date {
     icaltimetype t = icaltime_null_time();
     if ([date isKindOfClass:[NSDate class]]) {
-        unsigned unitFlags = NSYearCalendarUnit | NSMonthCalendarUnit |  NSDayCalendarUnit | NSHourCalendarUnit | NSMinuteCalendarUnit | NSSecondCalendarUnit |NSTimeZoneCalendarUnit ;
+        unsigned unitFlags = NSCalendarUnitYear | NSCalendarUnitMonth | NSCalendarUnitDay | NSCalendarUnitHour | NSCalendarUnitMinute | NSCalendarUnitSecond | NSCalendarUnitTimeZone;
         
         NSCalendar * calendar = [NSCalendar currentCalendar];
         [calendar setTimeZone:[NSTimeZone timeZoneForSecondsFromGMT:0]];
